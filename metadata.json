@@ -1,0 +1,6 @@
+{
+  "name": "Midnight Drive",
+  "description": "A sleek, cinematic modern arcade car racing game set in neon nights with 3D tracks, unlockable cars, drifting, and nitro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

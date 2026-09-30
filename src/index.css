@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: #08080c;
+    color: #f3f4f6;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom glow and backdrop effects */
+.glow-text-pink {
+  text-shadow: 0 0 16px rgba(244, 114, 182, 0.6), 0 0 32px rgba(236, 72, 153, 0.3);
+}
+
+.glow-text-violet {
+  text-shadow: 0 0 16px rgba(167, 139, 250, 0.6), 0 0 32px rgba(139, 92, 246, 0.3);
+}
+
+.glow-box-pink {
+  box-shadow: 0 0 20px -3px rgba(244, 114, 182, 0.35), inset 0 0 12px -2px rgba(244, 114, 182, 0.2);
+}
+
+.glow-box-violet {
+  box-shadow: 0 0 20px -3px rgba(167, 139, 250, 0.35), inset 0 0 12px -2px rgba(167, 139, 250, 0.2);
+}
+
+.glass-panel {
+  background: rgba(14, 14, 22, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(22, 22, 34, 0.85);
+  border-color: rgba(244, 114, 182, 0.35);
+}
+
+/* Speed streaks */
+@keyframes speedLines {
+  0% { transform: translateY(-100%); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(100%); opacity: 0; }
+}
+
+/* Subtle scanline overlay */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 26, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}
